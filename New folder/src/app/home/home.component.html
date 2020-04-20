@@ -1,0 +1,37 @@
+
+<div class="container homepage">
+    <div class="row banner">
+        <img class="col-md-12" src="./assets/banner.jpg" height="300"/>
+        <div class="banner-text">
+            <h1>Welcome to the new Healthcare poc!</h1>
+            
+            <p>
+            The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+
+            </p>
+        </div>
+    </div>
+    <div><label>Health Organizations</label><br/>
+    <select  class="form-control" (change) = "changeorg($event.target.value)" >
+      <option  *ngFor="let item of orgNames" [value]="item">{{item}}</option>
+    </select></div><div class="timefrm"><label>TimeFrame</label><br/>
+    <select class="form-control sec" (change) = "changetime($event.target.value)">
+      <option  *ngFor="let time of timefrm" [value]="time">{{time}}</option>
+    </select>
+    </div>
+    <div class="kpi-content container">
+            <ul class="kpi-tile">
+                <li *ngFor="let kpi of LegendInfo">
+                  <div class="score">
+                   <div class="kpi-header">{{kpi.item}}</div>
+                        <div class="kpi-score">{{kpi.MeanScore? kpi.MeanScore : kpi.TopBoxScore}}</div>
+                        </div>
+                        </li>
+                        </ul>
+                        
+                        </div>
+  
+      <input type="button" class="fadeIn fourth" (click)=perdash() value="Performance Dashboard"/>
+</div>
+
+

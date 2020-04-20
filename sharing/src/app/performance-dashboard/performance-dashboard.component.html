@@ -1,0 +1,13 @@
+
+<table align="center" class="dashboard"><tr>
+<th colspan="2" style="text-align: center;font-weight: bold;text-decoration: underline;">Performance Dashboard</th></tr>
+<tr><td ><app-bar-chart [data]="stateData1"></app-bar-chart></td>
+<td><app-bar-chart [data]="stateData2"></app-bar-chart></td></tr>
+<tr><td><app-bar-chart [data]="stateData3"></app-bar-chart></td>
+<td><app-bar-chart [data]="stateData4"></app-bar-chart></td></tr>
+<tr><td><app-bar-chart [data]="stateData5"></app-bar-chart></td>
+<td><app-bar-chart [data]="stateData6"></app-bar-chart></td></tr>
+<tr><td><app-bar-chart [data]="stateData7"></app-bar-chart></td>
+<td><app-bar-chart [data]="stateData8"></app-bar-chart></td></tr></table>
+<div><input type="button" class="fadeIn fourth" (click)=aggdash() value="Aggregate Dashboard">
+<input type="button" class="fadeIn fourths" (click)=home() value="Home"/></div>
