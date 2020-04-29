@@ -41,6 +41,8 @@ export class TriangleBarchartComponent implements OnInit {
       valueAxis.title.fontWeight = "bold";
       categoryAxis.title.text = "State";
       categoryAxis.title.fontWeight = "bold";
+      let valueLabel = series.bullets.push(new am4charts.LabelBullet());
+      valueLabel.label.text = "{valueY.value}";
 
       series.columns.template.fillOpacity = 0.75;
 

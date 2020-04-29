@@ -51,6 +51,8 @@ export class FloatingbarchartComponent implements OnInit {
       valueAxis.title.fontWeight = "bold";
       categoryAxis.title.text = "State";
       categoryAxis.title.fontWeight = "bold";
+      let valueLabel = series.bullets.push(new am4charts.LabelBullet());
+      valueLabel.label.text = "{valueX.value}";
       series.columns.template.column3D.stroke = am4core.color("#fff");
       series.columns.template.column3D.strokeOpacity = 0.2;
     });

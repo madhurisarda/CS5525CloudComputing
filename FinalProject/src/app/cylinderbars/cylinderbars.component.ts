@@ -51,6 +51,8 @@ export class CylinderbarsComponent implements OnInit {
       valueAxis.title.fontWeight = "bold";
       categoryAxis.title.text = "State";
       categoryAxis.title.fontWeight = "bold";
+      let valueLabel = series.bullets.push(new am4charts.LabelBullet());
+      valueLabel.label.text = "{valueY.value}";
       var columnTemplate = series.columns.template;
       columnTemplate.adapter.add("fill", function(fill, target) {
         return chart.colors.getIndex(target.dataItem.index);

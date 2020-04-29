@@ -67,6 +67,8 @@ export class BarChartComponent implements OnInit {
     valueAxis.title.text = "Measure Performance Rate";
     valueAxis.title.fontWeight = "bold";
     categoryAxis.title.text = "State";
+    let valueLabel = series.bullets.push(new am4charts.LabelBullet());
+    valueLabel.label.text = "{valueY.value}";
     categoryAxis.title.fontWeight = "bold";
 // as by default columns of the same series are of the same color, we add adapter which takes colors from chart.colors color set
     series.columns.template.adapter.add("fill", function(fill, target) {

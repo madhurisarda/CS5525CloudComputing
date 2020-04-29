@@ -63,6 +63,8 @@ export class BarChartAxisComponent implements OnInit {
     series.dataFields.valueY = "MeasurePerformanceRate";
     series.columns.template.tooltipText = "{valueY.value}";
     valueAxis.title.text = "Measure Performance Rate";
+    let valueLabel = series.bullets.push(new am4charts.LabelBullet());
+    valueLabel.label.text = "{valueY.value}";
     valueAxis.title.fontWeight = "bold";
     categoryAxis.title.text = "State";
     categoryAxis.title.fontWeight = "bold";

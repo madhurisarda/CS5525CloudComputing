@@ -42,6 +42,8 @@ export class BarchartTriangleComponent implements OnInit {
       categoryAxis.title.text = "State";
       categoryAxis.title.fontWeight = "bold";
       series.columns.template.fillOpacity = 0.75;
+      let valueLabel = series.bullets.push(new am4charts.LabelBullet());
+      valueLabel.label.text = "{valueY.value}";
 
       var hoverState = series.columns.template.states.create("hover");
       hoverState.properties.fillOpacity = 1;
