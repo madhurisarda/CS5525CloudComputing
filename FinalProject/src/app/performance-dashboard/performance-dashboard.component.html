@@ -1,0 +1,14 @@
+
+<table align="center" class="dashboard"><tr>
+<th colspan="2" style="text-align: center;font-weight: bold;text-decoration: underline;">Performance Dashboard</th></tr>
+<tr><td >CAHPS for MIPS SSM: Getting Timely Care, Appointments and Information<app-bar-chart [data]="stateData1"></app-bar-chart></td>
+<td>CAHPS for MIPS SSM: How Well Providers Communicate<app-floatingbarchart [data]="stateData2"></app-floatingbarchart></td></tr>
+<tr><td>CAHPS for MIPS SSM: Patient's Rating of Provider<app-cylinderCharts [data]="stateData3"></app-cylinderCharts></td>
+<td>CAHPS for MIPS SSM: Health Promotion and Education<app-triangle-barchart [data]="stateData4"></app-triangle-barchart></td></tr>
+<tr><td>CAHPS for MIPS SSM: Courteous and Helpful Office Staff<app-bar-chartAxis [data]="stateData5"></app-bar-chartAxis></td>
+<td>CAHPS for MIPS SSM: Care Coordination<app-barchartfloating [data]="stateData6"></app-barchartfloating></td></tr>
+<tr><td>CAHPS for MIPS SSM: Between Visit Communication<app-cylinderbars [data]="stateData7"></app-cylinderbars></td>
+<td>CAHPS for MIPS SSM: Stewardship of Patient Resources<app-barcharttriangle [data]="stateData8"></app-barcharttriangle></td></tr></table>
+<div><input type="button" class="fadeIn fourth" (click)=aggdash() value="Aggregate Dashboard">
+<input type="button" class="fadeIn fourths" (click)=home() value="Home"/></div>
+
