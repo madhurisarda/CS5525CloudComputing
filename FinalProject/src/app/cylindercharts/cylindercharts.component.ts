@@ -46,6 +46,7 @@ export class CylinderchartsComponent implements OnInit {
       var series = chart.series.push(new am4charts.ConeSeries());
       series.dataFields.valueY = "MeasurePerformanceRate";
       series.dataFields.categoryX = "State";
+      series.columns.template.tooltipText = "{valueY}";
       valueAxis.title.text = "Measure Performance Rate";
       valueAxis.title.fontWeight = "bold";
       categoryAxis.title.text = "State";
