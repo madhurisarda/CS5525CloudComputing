@@ -4,8 +4,6 @@ import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import { Data } from '../models/data.model';
 am4core.useTheme(am4themes_animated);
-
-am4core.useTheme(am4themes_animated);
 // Themes end
 @Component({
   selector: 'app-barchartfloating',

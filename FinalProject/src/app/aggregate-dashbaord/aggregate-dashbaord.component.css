@@ -29,7 +29,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   display:inline-block;
-  margin: 40px 8px 10px 8px; 
+  margin: 40px 8px 10px 8px;
   color: #cccccc;
 }
 
@@ -40,7 +40,7 @@ h2 {
 .wrapper {
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   min-height: 100%;
@@ -236,11 +236,14 @@ input[type=text]:placeholder {
       margin-left: 487px;
     margin-top: 54px;
 }
-.fadeIn.fourth {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-      
+.fadeIn.fourth{
+  margin-left: 350px;
+  margin-top: 40px;
+  background-color: #005cbf;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+
 }
 
 /* Simple CSS3 Fade-in Animation */
@@ -269,7 +272,7 @@ input[type=text]:placeholder {
 
 *:focus {
     outline: none;
-} 
+}
 
 #icon {
   width:60%;

@@ -1,12 +1,15 @@
-
-  <div class="wrapper fadeInDown">
-    <h2><b>CC_Project_Team 3 - Patience Experience Analystics</b></h2>
-    <div id="">
-      <div class="fadeIn first">
-        Username : <input [(ngModel)]="user.email" type="text" class="fadeIn second" placeholder="username"><br>
-        Password : <input [(ngModel)]="user.password" type="text" class="fadeIn third" placeholder="password" type="password">
-
-        <input type="button" class="fadeIn fourth" (click)=login(user) value="                 Login                  "/><br>
-        <input type="button" class="fadeIn fourth" (click)=register(user) value="New User? Register here"/>
+<div align = "center">
+  <div style="text-align: center;font-weight: bold;text-decoration: underline; font-size:40px">
+    CC_Project_Team 3 - Patience Experience Analystics
+  </div>
+      <br>
+      <div>
+        <p style="text-align: center;font-weight: bold; font-size:20px">Username : </p><input [(ngModel)]="user.email" type="text" placeholder="Username"><br>
+        <p style="text-align: center;font-weight: bold; font-size:20px">Password : </p><input [(ngModel)]="user.password" type="password" placeholder="Password">
+        <div align="center"><br><input type="button" class="fadeIn fourth" (click)=login(user); value="Login"/>
+          <input type="button" class="fadeIn fourth" (click)=register(user); value="New User? Register here"/></div>
+        </div>
       </div>
-    </div></div>
+
+
+

@@ -17,6 +17,7 @@ import { CylinderbarsComponent } from './cylinderbars/cylinderbars.component';
 import { PerformanceDashboardComponent } from './performance-dashboard/performance-dashboard.component';
 import { BarChartAxisComponent } from './bar-chartAxis/bar-chartAxis.component';
 import { AggregateDashbaordComponent } from './aggregate-dashbaord/aggregate-dashbaord.component';
+import { StarRatingDashboardComponent } from './star-rating-dashboard/star-rating-dashboard.component';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 import {AngularFireAuth} from 'angularfire2/auth';
@@ -49,6 +50,7 @@ var firebaseConfig = {
     BarChartAxisComponent,
     CylinderbarsComponent,
     FloatingbarchartComponent,
+    StarRatingDashboardComponent,
     RegisterComponent
   ],
   imports: [
