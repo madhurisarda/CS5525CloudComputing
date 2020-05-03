@@ -17,7 +17,6 @@ export class LoginComponent{
        try {
          this.firebaseauth.auth.signInWithEmailAndPassword(user.email, user.password).then(() => {
            console.log(this.firebaseauth.auth.currentUser.uid);
-           alert("login success");
            this.router.navigate(['/home']);
          }).catch(()=>{
            alert('Try again. Invalid Credentials');
